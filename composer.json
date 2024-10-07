@@ -1,0 +1,21 @@
+{
+    "name": "pisc/genflow",
+    "description": "Generator utilities library",
+    "type": "library",
+    "license": "MIT",
+    "autoload": {
+        "files": ["src/functions.php"],
+        "psr-4": {
+            "Pisc\\GenFlow\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Pieter Scheffers",
+            "email": "info@pieterscheffers.nl"
+        }
+    ],
+    "require-dev": {
+        "phpstan/phpstan": "^1.12.6"
+    }
+}
