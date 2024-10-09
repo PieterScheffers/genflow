@@ -3,7 +3,6 @@
 declare(strict_types=1);
 
 use Pisc\GenFlow\GenFlow;
-use Generator;
 
 describe('GenFlow->__construct', function () {
     it('should create a GenFlow instance of an array', function () {
