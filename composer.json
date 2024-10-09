@@ -12,9 +12,16 @@
     "authors": [
         {
             "name": "Pieter Scheffers",
-            "email": "info@pieterscheffers.nl"
+            "email": "info@pieterscheffers.nl",
+            "homepage": "https://www.pieterscheffers.nl",
+            "role": "Developer"
         }
     ],
+    "support": {
+        "issues": "https://github.com/PieterScheffers/genflow/issues",
+        "wiki": "https://github.com/PieterScheffers/genflow/wiki",
+        "source": "https://github.com/PieterScheffers/genflow"
+    },
     "require-dev": {
         "phpstan/phpstan": "^1.12.6",
         "pestphp/pest": "^3.3.0"
