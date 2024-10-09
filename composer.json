@@ -16,6 +16,12 @@
         }
     ],
     "require-dev": {
-        "phpstan/phpstan": "^1.12.6"
+        "phpstan/phpstan": "^1.12.6",
+        "pestphp/pest": "^3.3.0"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
     }
 }
