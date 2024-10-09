@@ -1,6 +1,8 @@
 <?php
 
-namespace pisc\GenFlow;
+declare(strict_types=1);
+
+namespace Pisc\GenFlow;
 
 /**
  * Get an attribute of an array or object.

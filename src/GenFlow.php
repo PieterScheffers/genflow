@@ -1,6 +1,8 @@
 <?php
 
-namespace pisc\GenFlow;
+declare(strict_types=1);
+
+namespace Pisc\GenFlow;
 
 use Generator;
 use JsonSerializable;
