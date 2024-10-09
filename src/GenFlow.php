@@ -103,6 +103,12 @@ class GenFlow implements JsonSerializable
         return new static(static::filterGenerator($this->generator, $attribute));
     }
 
+    /**
+     * @template S
+     *
+     * @param S $initial
+     * @return S
+     */
     public function reduce(callable $fn, mixed $initial = null): mixed
     {
         $acc = $initial;
