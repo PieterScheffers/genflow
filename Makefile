@@ -9,7 +9,7 @@ help: ## Print help for each target
 
 .PHONY: phpstan
 phpstan: ## Run phpstan analyser
-	vendor/bin/phpstan analyse -l 9 src
+	vendor/bin/phpstan analyse --level=9 src
 
 .PHONY: test
 test: ## Run Pest unit tests
