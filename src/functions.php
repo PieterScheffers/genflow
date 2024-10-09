@@ -25,7 +25,7 @@ function getAttribute(string|callable $getter, mixed $value, mixed $key): mixed
 }
 
 /**
- * Short method a new GenFlow instance.
+ * Short method to create a new GenFlow instance.
  */
 function gen(iterable $iterable): GenFlow
 {
