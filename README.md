@@ -15,7 +15,7 @@ composer require pisc/genflow
 
 namespace MyNamespace;
 
-use function Pisc/GenFlow/gen;
+use function Pisc\GenFlow\gen;
 
 function myGenerator()
 {

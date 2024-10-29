@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-use Pisc\GenFlow\GenFlow;
+use function Pisc\GenFlow\gen;
 
 test('performance', function () {
     function createBigGenerator(): Generator
@@ -14,7 +14,7 @@ test('performance', function () {
 
     $memoryBefore = memory_get_usage();
 
-    $genFlow = new GenFlow(createBigGenerator());
+    $genFlow = gen(createBigGenerator());
     $result = $genFlow
         ->map(fn ($item) => array_merge($item, ['age' => $item['id'] % 100]))
         ->filter(fn ($item) => $item['age'] > 50)
