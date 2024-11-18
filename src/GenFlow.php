@@ -160,6 +160,40 @@ class GenFlow implements JsonSerializable
         return new static(static::batchGenerator($this->generator, $batchSize));
     }
 
+    public static function splitGenerator(Generator $generator, callable $fn): Generator
+    {
+        $generators = [];
+
+        foreach ($generator as $key => $value) {
+            $key = $fn($value, $key);
+
+            if (!isset($generators[$key])) {
+
+            }
+        }
+    }
+
+    public function split(callable $fn): static
+    {
+        return new static(static::splitGenerator($this->generator, $fn));
+    }
+
+    public static function zipGenerator(Generator $generator): Generator
+    {
+        foreach ($generator as $innerGenerator) {
+            if (is_iterable($innerGenerator)) {
+                yield from $innerGenerator;
+            } else {
+                yield $innerGenerator;
+            }
+        }
+    }
+
+    public function zip(): static
+    {
+        return new static(static::zipGenerator($this->generator));
+    }
+
     /**
      * @return TItem|null
      */
